@@ -37,60 +37,60 @@ void mainloop() {
 	DrawBox(0, 0, 152, 70, GetColor(50, 50, 50), FALSE);
 	DrawBox(1, 1, 151, 69, GetColor(50, 50, 50), FALSE);
 
-	if (Key[KEY_INPUT_Z] > 0) {
+	if (Key[KEY_INPUT_Z] > 0 || Key[KEY_INPUT_COMMA] > 0 ) {
 		DrawGraph(10+64, 36, key1p, TRUE);
 
-		if (Key[KEY_INPUT_Z] == 1) {
+		if (Key[KEY_INPUT_Z] == 1 || Key[KEY_INPUT_COMMA] == 1) {
 			PlaySoundMem(m1, DX_PLAYTYPE_BACK,TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_S] > 0) {
+	if (Key[KEY_INPUT_S] > 0 || Key[KEY_INPUT_L] > 0) {
 		DrawGraph(18+64, 10, key2p, TRUE);
 
-		if (Key[KEY_INPUT_S] == 1) {
+		if (Key[KEY_INPUT_S] == 1 || Key[KEY_INPUT_L] == 1) {
 			PlaySoundMem(m2, DX_PLAYTYPE_BACK,TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_X] > 0) {
+	if (Key[KEY_INPUT_X] > 0 || Key[KEY_INPUT_PERIOD] > 0) {
 		DrawGraph(28+64, 36, key3p, TRUE);
-		if (Key[KEY_INPUT_X] == 1) {
+		if (Key[KEY_INPUT_X] == 1 || Key[KEY_INPUT_PERIOD] == 1) {
 			PlaySoundMem(m3, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_D] > 0) {
+	if (Key[KEY_INPUT_D] > 0 || Key[KEY_INPUT_SEMICOLON] > 0) {
 		DrawGraph(36+64, 10, key4p, TRUE);
-		if (Key[KEY_INPUT_D] == 1) {
+		if (Key[KEY_INPUT_D] == 1 || Key[KEY_INPUT_SEMICOLON] == 1) {
 			PlaySoundMem(m4, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_C] > 0) {
+	if (Key[KEY_INPUT_C] > 0 || Key[KEY_INPUT_SLASH] > 0) {
 		DrawGraph(46+64, 36, key5p, TRUE);
-		if (Key[KEY_INPUT_C] == 1) {
+		if (Key[KEY_INPUT_C] == 1 || Key[KEY_INPUT_SLASH] == 1) {
 			PlaySoundMem(m5, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_F] > 0) {
+	if (Key[KEY_INPUT_F] > 0 || Key[KEY_INPUT_COLON] > 0) {
 		DrawGraph(54+64, 10, key6p, TRUE);
-		if (Key[KEY_INPUT_F] == 1) {
+		if (Key[KEY_INPUT_F] == 1 || Key[KEY_INPUT_COLON] == 1) {
 			PlaySoundMem(m6, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_V] > 0) {
+	if (Key[KEY_INPUT_V] > 0 || Key[KEY_INPUT_BACKSLASH] > 0) {
 		DrawGraph(64+64, 36, key7p, TRUE);
-		if (Key[KEY_INPUT_V] == 1) {
+		if (Key[KEY_INPUT_V] == 1 || Key[KEY_INPUT_BACKSLASH] == 1) {
 			PlaySoundMem(m7, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_LSHIFT] > 0) {
+	if (Key[KEY_INPUT_LSHIFT] > 0 || Key[KEY_INPUT_RSHIFT] > 0) {
 		DrawGraph(10, 10, sarap, TRUE);
-		if (Key[KEY_INPUT_LSHIFT] == 1) {
+		if (Key[KEY_INPUT_LSHIFT] == 1 || Key[KEY_INPUT_RSHIFT] ==1) {
 			PlaySoundMem(m8, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
@@ -111,60 +111,60 @@ void mainloop2() {
 	DrawBox(0, 0, 152, 70, GetColor(50, 50, 50), FALSE);
 	DrawBox(1, 1, 151, 69, GetColor(50, 50, 50), FALSE);
 
-	if (Key[KEY_INPUT_COMMA] > 0) {
+	if (Key[KEY_INPUT_Z] > 0 || Key[KEY_INPUT_COMMA] > 0) {
 		DrawGraph(10, 36, key1p, TRUE);
 
-		if (Key[KEY_INPUT_COMMA] == 1) {
+		if (Key[KEY_INPUT_Z] == 1 || Key[KEY_INPUT_COMMA] == 1) {
 			PlaySoundMem(m1, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_L] > 0) {
+	if (Key[KEY_INPUT_S] > 0 || Key[KEY_INPUT_L] > 0) {
 		DrawGraph(18, 10, key2p, TRUE);
 
-		if (Key[KEY_INPUT_L] == 1) {
+		if (Key[KEY_INPUT_S] == 1 || Key[KEY_INPUT_L] == 1) {
 			PlaySoundMem(m2, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_PERIOD] > 0) {
+	if (Key[KEY_INPUT_X] > 0 || Key[KEY_INPUT_PERIOD] > 0) {
 		DrawGraph(28, 36, key3p, TRUE);
-		if (Key[KEY_INPUT_PERIOD] == 1) {
+		if (Key[KEY_INPUT_X] == 1 || Key[KEY_INPUT_PERIOD] == 1) {
 			PlaySoundMem(m3, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_SEMICOLON] > 0) {
+	if (Key[KEY_INPUT_D] > 0 || Key[KEY_INPUT_SEMICOLON] > 0) {
 		DrawGraph(36, 10, key4p, TRUE);
-		if (Key[KEY_INPUT_SEMICOLON] == 1) {
+		if (Key[KEY_INPUT_D] == 1 || Key[KEY_INPUT_SEMICOLON] == 1) {
 			PlaySoundMem(m4, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_SLASH] > 0) {
+	if (Key[KEY_INPUT_C] > 0 || Key[KEY_INPUT_SLASH] > 0) {
 		DrawGraph(46, 36, key5p, TRUE);
-		if (Key[KEY_INPUT_SLASH] == 1) {
+		if (Key[KEY_INPUT_C] == 1 || Key[KEY_INPUT_SLASH] == 1) {
 			PlaySoundMem(m5, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_COLON] > 0) {
+	if (Key[KEY_INPUT_F] > 0 || Key[KEY_INPUT_COLON] > 0) {
 		DrawGraph(54, 10, key6p, TRUE);
-		if (Key[KEY_INPUT_COLON] == 1) {
+		if (Key[KEY_INPUT_F] == 1 || Key[KEY_INPUT_COLON] == 1) {
 			PlaySoundMem(m6, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_BACKSLASH] > 0) {
+	if (Key[KEY_INPUT_V] > 0 || Key[KEY_INPUT_BACKSLASH] > 0) {
 		DrawGraph(64, 36, key7p, TRUE);
-		if (Key[KEY_INPUT_BACKSLASH] == 1) {
+		if (Key[KEY_INPUT_V] == 1 || Key[KEY_INPUT_BACKSLASH] == 1) {
 			PlaySoundMem(m7, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
 
-	if (Key[KEY_INPUT_RSHIFT] > 0) {
+	if (Key[KEY_INPUT_LSHIFT] > 0 || Key[KEY_INPUT_RSHIFT] > 0) {
 		DrawGraph(94, 10, sarap, TRUE);
-		if (Key[KEY_INPUT_RSHIFT] == 1) {
+		if (Key[KEY_INPUT_LSHIFT] == 1 || Key[KEY_INPUT_RSHIFT] == 1) {
 			PlaySoundMem(m8, DX_PLAYTYPE_BACK, TRUE);
 		}
 	}
@@ -174,7 +174,7 @@ void mainloop2() {
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	SetWindowSizeChangeEnableFlag(FALSE, FALSE); // ウインドウのサイズを手動ではできず、且つウインドウのサイズに合わせて拡大もしないようにする
-	SetWindowSize(152, 152);
+	SetWindowSize(152, 76);
 	// メインウインドウのバックグラウンドカラーを設定する(各色0～255)
 	ChangeWindowMode(TRUE);
 	SetDrawScreen(DX_SCREEN_BACK);
@@ -205,14 +205,14 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	p2p = LoadGraph("./dot/2p.png");
 	p1pp = LoadGraph("./dot/1pp.png");
 	p2pp = LoadGraph("./dot/2pp.png");
-	m1 = LoadSoundMem("./wav/hu.mp3");
-	m2 = LoadSoundMem("./wav/ta.mp3");
-	m3 = LoadSoundMem("./wav/i.mp3");
-	m4 = LoadSoundMem("./wav/no.mp3");
-	m5 = LoadSoundMem("./wav/ki.mp3");
-	m6 = LoadSoundMem("./wav/wa.mp3");
-	m7 = LoadSoundMem("./wav/mi.mp3");
-	m8 = LoadSoundMem("./wav/ah.mp3");
+	m1 = LoadSoundMem("./wav/m1.mp3");
+	m2 = LoadSoundMem("./wav/m2.mp3");
+	m3 = LoadSoundMem("./wav/m3.mp3");
+	m4 = LoadSoundMem("./wav/m4.mp3");
+	m5 = LoadSoundMem("./wav/m5.mp3");
+	m6 = LoadSoundMem("./wav/m6.mp3");
+	m7 = LoadSoundMem("./wav/m7.mp3");
+	m8 = LoadSoundMem("./wav/m8.mp3");
 
 
 while (ScreenFlip() == 0 && ProcessMessage() == 0 && ClearDrawScreen() == 0) {
