@@ -1,13 +1,2 @@
-./Debug/*.txt
-./Debug/*.ilk
-./Debug/*.pdb
-
-./x68
+x64/
 *.sln
-
-./bmscondj/Log.txt
-./bmscondj/bmscondj.vcxproj
-./bmscondj/bmscondj.vcxproj.filters
-./bmscondj/.vs
-./bmscondj/Debug
-./bmscondj/x64
